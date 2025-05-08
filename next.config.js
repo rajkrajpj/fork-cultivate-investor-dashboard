@@ -20,7 +20,11 @@ const nextConfig = {
         pathname: '**'
       }
     ]
-  }
+  },
+  webpack: (config, { dev, isServer }) => {
+    // Custom webpack config if needed
+    return config;
+  },
 };
 
 module.exports = nextConfig;
